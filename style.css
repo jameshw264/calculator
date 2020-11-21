@@ -1,0 +1,77 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    background-color: #222;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    padding-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    height: 40px;
+    line-height: 26px;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+    outline: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.number, .operator, .operator-extra, .equals {
+    transition-duration: 0.2s;
+    background-color: rgb(170, 170, 170);
+    display: inline-block;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 33px;
+    width: 50px;
+    margin:10px 10px;
+    text-align: center;
+}
+.operator-extra {
+    width: 75px;
+}
+
+.equals, .operator-extra, .operator {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+
+.operator:hover, .operator-extra:hover, .equals:hover {
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: rgb(107, 107, 107);
+}
+.numbers {
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    background-color: #eee;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.number:hover {
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+}
