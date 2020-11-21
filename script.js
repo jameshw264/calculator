@@ -57,14 +57,14 @@ const operators = document.querySelectorAll('.operator');
 operators.forEach(operator => {
     operator.onclick = function () {
         if (num1 != 0){
-            num2 = Number(value)
+            num2 = Number(calculator.value)
             num1 = operate(num1, num2, operator_value);
             num2 = 0;
             console.log('Two values have already been entered')
             console.log(num1)
             console.log(num2)
         } else{
-            num1 = Number(value);
+            num1 = Number(calculator.value);
             console.log('Only the first value has been entered.')
             console.log(num1)
             console.log(num2)
@@ -76,8 +76,11 @@ operators.forEach(operator => {
 
 const equals = document.querySelector('.equals');
 equals.onclick = function () {
-    num2 = Number(value);
+    num2 = Number(calculator.value);
     value = ''
     result = operate(num1, num2, operator_value);
+    if (result == 'NaN'){
+        result = 'Syntax Error'
+    }
     calculator.value = result;
 }
